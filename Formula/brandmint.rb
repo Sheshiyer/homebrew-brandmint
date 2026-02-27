@@ -17,6 +17,8 @@ class Brandmint < Formula
       annotated-doc
       shellingham
       typing-extensions
+      markdown-it-py
+      mdurl
       typer
       rich
       pydantic

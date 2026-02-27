@@ -19,6 +19,7 @@ class Brandmint < Formula
       typing-extensions
       markdown-it-py
       mdurl
+      pygments
       typer
       rich
       pydantic

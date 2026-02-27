@@ -14,6 +14,7 @@ class Brandmint < Formula
     venv.pip_install buildpath
     venv.pip_install %w[
       click
+      annotated-doc
       typer
       rich
       pydantic

@@ -13,6 +13,7 @@ class Brandmint < Formula
     venv = virtualenv_create(libexec, "python3.11")
     venv.pip_install buildpath
     venv.pip_install %w[
+      click
       typer
       rich
       pydantic

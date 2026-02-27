@@ -21,15 +21,12 @@ class Brandmint < Formula
       requests
       fal-client
     ]
-    venv.pip_install_and_link buildpath
 
-    (bin/"bm").write <<~EOS
-      #!/bin/bash
-      exec "#{bin}/brandmint" "$@"
-    EOS
+    bin.install_symlink libexec/"bin/brandmint"
+    bin.install_symlink libexec/"bin/bm"
   end
 
   test do
-    assert_match "Brandmint", shell_output("#{bin}/brandmint --help")
+    assert_match "Brandmint", shell_output("#{bin}/bm --help")
   end
 end

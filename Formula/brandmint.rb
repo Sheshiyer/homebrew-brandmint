@@ -15,6 +15,8 @@ class Brandmint < Formula
     venv.pip_install %w[
       click
       annotated-doc
+      shellingham
+      typing-extensions
       typer
       rich
       pydantic

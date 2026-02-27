@@ -11,6 +11,16 @@ class Brandmint < Formula
 
   def install
     venv = virtualenv_create(libexec, "python3.11")
+    venv.pip_install buildpath
+    venv.pip_install %w[
+      typer
+      rich
+      pydantic
+      pyyaml
+      python-dotenv
+      requests
+      fal-client
+    ]
     venv.pip_install_and_link buildpath
     bin.install_symlink bin/"brandmint" => "bm"
   end

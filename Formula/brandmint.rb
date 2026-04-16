@@ -3,8 +3,8 @@ class Brandmint < Formula
 
   desc "Unified brand creation orchestrator (text + visuals + campaigns)"
   homepage "https://github.com/Sheshiyer/brandmint-oracle-aleph"
-  url "https://github.com/Sheshiyer/brandmint-oracle-aleph/archive/refs/tags/v4.4.1.tar.gz"
-  sha256 "79c70b8d30430bfe7801da0010090acac2f9e7d840bdfc3ee8bf7d0e0a83b1f4"
+  url "https://github.com/Sheshiyer/brandmint-oracle-aleph/archive/refs/tags/v5.0.1.tar.gz"
+  sha256 "0d71e5abf48c0912e01556982db1fd910ebd85d2733174d25e5c53cddcededdc"
   license "MIT"
 
   depends_on "python@3.11"
